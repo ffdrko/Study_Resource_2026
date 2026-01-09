@@ -12,8 +12,10 @@ while True:
             for item in todo_list:
                 print(item)
         case 'edit':
-            item_number = int(input("Enter the number of the item to edit: ")) - 1
-            todo_list[item_number] = input("Enter the new to-do item: ")
+            item_number = int(input("Enter the number of the item to edit: "))
+            item_number = item_number - 1
+            new_todo_item  = input("Enter the new to-do item: ")
+            todo_list[item_number] = new_todo_item
         case 'exit':
             break
 
