@@ -1,3 +1,4 @@
+# For loop
 todo_list = []
 
 while True:
@@ -12,6 +13,7 @@ while True:
             for index, item in enumerate(todo_list):
                 row = f"{index}-{item}"
                 print(row)
+            print(len(todo_list))
         case 'edit':
             number = int(input("Enter the number of the todo to edit: "))
             new_todo = input("Enter the new todo: ")
