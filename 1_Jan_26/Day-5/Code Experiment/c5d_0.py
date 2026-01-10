@@ -1,4 +1,4 @@
-# For loop
+# len function
 todo_list = []
 
 while True:
