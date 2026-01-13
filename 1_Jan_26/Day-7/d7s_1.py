@@ -18,7 +18,7 @@ while True:
             todo_list = file.readlines()
 
             for index, item in enumerate(todo_list):
-                print(f"{index + 1}-{item.strip("\n")}")
+                print(f"{index + 1}-{item.strip()}")
         case "edit":
             item_number = int(input("Enter the number of the item to edit: "))
             new_todo = input("Enter the new todo item: ") + "\n"
