@@ -1,5 +1,6 @@
-# we can use comment any line of code 
+# we can also use comment for document the code base
 while True:
+    # Taking action from user
     user_action = input("Type add, show, edit, complete or exit: ")
 
     match user_action:
