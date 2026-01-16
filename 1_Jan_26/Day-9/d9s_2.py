@@ -21,7 +21,7 @@ while True:
             item = item.strip("\n")
             print(f"{index + 1}-{item}")
     elif 'edit' in user_action:
-        todo_num = int(input("Enter the number of todo to edit: ")) - 1
+        todo_num = int(user_action[5:]) - 1
 
         with open("1_Jan_26/Day-9/file/todo_list.txt") as file:
             todo_list = file.readlines()    
