@@ -3,7 +3,7 @@ while True:
     user_action = user_action.strip()
 
     if 'add' in user_action:
-        todo_item = input("Enter your todo item: ")
+        todo_item = user_action[4: ]
 
         with open("1_Jan_26/Day-9/file/todo_list.txt") as file:
             todo_list = file.readlines()
