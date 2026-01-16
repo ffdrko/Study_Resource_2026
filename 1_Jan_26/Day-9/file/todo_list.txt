@@ -1,4 +1,3 @@
-play cricket
 play chess
 play run
 write a book

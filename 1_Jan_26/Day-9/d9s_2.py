@@ -32,7 +32,7 @@ while True:
             file.writelines(todo_list)
     elif 'complete' in user_action:
         
-        todo_num = int(input("Enter the number of todo to complete: ")) - 1
+        todo_num = int(user_action[9:]) - 1
 
         with open("1_Jan_26/Day-9/file/todo_list.txt") as file:
             todo_list = file.readlines()    
