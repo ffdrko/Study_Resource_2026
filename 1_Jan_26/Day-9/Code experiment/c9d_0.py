@@ -45,3 +45,5 @@ while True:
             file.writelines(todo_list)
     elif 'exit' in user_action:
         break         
+    else:
+        print("Comment invalid, use valid comment only.")
