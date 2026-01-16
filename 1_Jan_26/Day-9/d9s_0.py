@@ -5,13 +5,13 @@ while True:
         case 'add':
             todo_item = input("Enter a todo item: ")
 
-            with open("./file/todo_list.txt", "r") as file:
+            with open("1_Jan_26/Day-9/d9s_0.py", "r") as file:
                 todo_list = file.readlines()
 
 
             todo_list.append(todo_item + "\n")
 
-            with open("./file/todo_list.txt", "w") as file:
+            with open("1_Jan_26/Day-9/d9s_0.py", "w") as file:
                 file.writelines(todo_list)
         case 'show':
             with open("./file/todo_list.txt", "r") as file:
@@ -42,3 +42,4 @@ while True:
                 file.writelines(todo_list)
         case 'exit':
             break
+new todo
