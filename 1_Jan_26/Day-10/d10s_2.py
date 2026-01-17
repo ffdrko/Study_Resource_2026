@@ -22,24 +22,33 @@ while True:
             item = item.strip("\n")
             print(f"{index+1}-{item}")
     elif user_action.startswith('edit'):
-        todo_item = int(user_action[5:])
-        with open(FILE_PATH) as file:
-            todo_list = file.readlines()
+        try:
+            todo_item = int(user_action[5:])
+            with open(FILE_PATH) as file:
+                todo_list = file.readlines()
 
-        todo_list[todo_item-1] = input("Enter new item to add: ") + '\n'
+            todo_list[todo_item-1] = input("Enter new item to add: ") + '\n'
 
-        with open(FILE_PATH, 'w') as file:
-            file.writelines(todo_list)
+            with open(FILE_PATH, 'w') as file:
+                file.writelines(todo_list)
+        except ValueError:
+            print("use item number after edit.")
     elif user_action.startswith('complete'):
-        todo_num = int(user_action[9:]) - 1
+        try:
+            todo_num = int(user_action[9:]) - 1
 
-        with open(FILE_PATH) as file:
-            todo_list = file.readlines()
+            with open(FILE_PATH) as file:
+                todo_list = file.readlines()
 
-        todo_list.pop(todo_num)
+            todo_list.pop(todo_num)
 
-        with open(FILE_PATH, "w") as file:
-            file.writelines(todo_list)
+            with open(FILE_PATH, "w") as file:
+                file.writelines(todo_list)
+        except IndexError:
+            with open(FILE_PATH) as file:
+                todo_list = file.readlines()
+
+            print(f"The length of todo_list is {len(todo_list)}")
     elif user_action.startswith('exit'):
         break
     else:
