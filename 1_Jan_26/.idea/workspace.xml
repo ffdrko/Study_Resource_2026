@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-10 Bonus">
+    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-15 main function added">
+      <change afterPath="$PROJECT_DIR$/Day-15/d15s_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,24 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.b0.executor&quot;: &quot;Run&quot;,
-    &quot;Python.d10s_0.executor&quot;: &quot;Run&quot;,
-    &quot;Python.d10s_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.d10s_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.d9s_0.executor&quot;: &quot;Run&quot;,
-    &quot;Python.d9s_2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/FFD WORK/FFD/Study_Resource_2026/1_Jan_26&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.b0.executor": "Run",
+    "Python.d10s_0.executor": "Run",
+    "Python.d10s_1.executor": "Run",
+    "Python.d10s_2.executor": "Run",
+    "Python.d15s_1.executor": "Run",
+    "Python.d9s_0.executor": "Run",
+    "Python.d9s_2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/FFD WORK/FFD/Study_Resource_2026/1_Jan_26"
   }
-}</component>
-  <component name="RunManager" selected="Python.b0">
+}]]></component>
+  <component name="RunManager" selected="Python.d15s_1">
     <configuration name="b0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
@@ -148,7 +150,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="d9s_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="d15s_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,11 +159,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-15" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-9/d9s_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-15/d15s_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.d15s_1" />
         <item itemvalue="Python.b0" />
         <item itemvalue="Python.d10s_2" />
         <item itemvalue="Python.d10s_1" />
         <item itemvalue="Python.d10s_0" />
-        <item itemvalue="Python.d9s_2" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +253,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768654660127</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Day-14 recap on Day-15 and also todo list and function added">
+      <option name="closed" value="true" />
+      <created>1769172618579</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769172618579</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Day-15 main function added">
+      <option name="closed" value="true" />
+      <created>1769186709825</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769186709825</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -262,6 +280,8 @@
     <MESSAGE value="Day-10 apply try except for better error handling." />
     <MESSAGE value="Day-10 code experiment" />
     <MESSAGE value="Day-10 Bonus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day-10 Bonus" />
+    <MESSAGE value="Day-14 recap on Day-15 and also todo list and function added" />
+    <MESSAGE value="Day-15 main function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day-15 main function added" />
   </component>
 </project>
