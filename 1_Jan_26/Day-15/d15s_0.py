@@ -1,10 +1,10 @@
-def get_todo_item(filepath = '.\file\todo_item.txt'):
+def get_todo_item(filepath = './file/todo_list.txt'):
     with open(filepath) as f:
         todo_local = f.readlines()
     return todo_local
 
 
-def write_todo_item(todo_args, filepath = '.\file\todo_item.txt'):
+def write_todo_item(todo_args, filepath = './file/todo_list.txt'):
     with open(filepath, 'w') as f:
         f.writelines(todo_args)
 
