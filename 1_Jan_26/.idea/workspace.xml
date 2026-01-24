@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-15 import json file and quiz app in Bonus" />
+    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-15 Assignment 1 done." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +43,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.A15S_0.executor": "Run",
     "Python.b0.executor": "Run",
     "Python.b1.executor": "Run",
     "Python.c15d_0.executor": "Run",
@@ -64,7 +65,7 @@
     "last_opened_file_path": "D:/FFD WORK/FFD/Study_Resource_2026/1_Jan_26"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.A15S_0">
+  <component name="RunManager" selected="Python.b15g_1">
     <configuration name="A15S_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
@@ -131,7 +132,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="c15d_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="b15g_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,11 +141,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-15/Code Experiment" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-15/Bug" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-15/Code Experiment/c15d_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-15/Bug/b15g_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.b15g_1" />
         <item itemvalue="Python.A15S_0" />
         <item itemvalue="Python.b1" />
         <item itemvalue="Python.b0" />
         <item itemvalue="Python.c15d_3" />
-        <item itemvalue="Python.c15d_2" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769235580686</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Day-15 Assignment 1 done.">
+      <option name="closed" value="true" />
+      <created>1769235905106</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1769235905107</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,6 +383,7 @@
     <MESSAGE value="Day-15 import shutil code experiment" />
     <MESSAGE value="Day-15 import webbrowser code experiment" />
     <MESSAGE value="Day-15 import json file and quiz app in Bonus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day-15 import json file and quiz app in Bonus" />
+    <MESSAGE value="Day-15 Assignment 1 done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day-15 Assignment 1 done." />
   </component>
 </project>
