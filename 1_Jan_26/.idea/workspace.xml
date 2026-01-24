@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-15 main function added">
-      <change afterPath="$PROJECT_DIR$/Day-15/d15s_2.py" afterDir="false" />
+    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-15 import time module and use strftime">
+      <change afterPath="$PROJECT_DIR$/Day-15/Code Experiment/c15d_0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day-15/file/idea.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,10 +48,12 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.b0.executor": "Run",
+    "Python.c15d_0.executor": "Run",
     "Python.d10s_0.executor": "Run",
     "Python.d10s_1.executor": "Run",
     "Python.d10s_2.executor": "Run",
     "Python.d15s_1.executor": "Run",
+    "Python.d15s_2.executor": "Run",
     "Python.d9s_0.executor": "Run",
     "Python.d9s_2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -61,7 +64,7 @@
     "last_opened_file_path": "D:/FFD WORK/FFD/Study_Resource_2026/1_Jan_26"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.d15s_1">
+  <component name="RunManager" selected="Python.c15d_0">
     <configuration name="b0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
@@ -84,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="d10s_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="c15d_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,33 +96,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-15/Code Experiment" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-10/d10s_0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="d10s_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="1_Jan_26" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-10/d10s_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-15/Code Experiment/c15d_0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,13 +153,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="d15s_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="1_Jan_26" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-15" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-15/d15s_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.c15d_0" />
+        <item itemvalue="Python.d15s_2" />
         <item itemvalue="Python.d15s_1" />
         <item itemvalue="Python.b0" />
         <item itemvalue="Python.d10s_2" />
-        <item itemvalue="Python.d10s_1" />
-        <item itemvalue="Python.d10s_0" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769186709825</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Day-15 import time module and use strftime">
+      <option name="closed" value="true" />
+      <created>1769190348091</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1769190348091</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -282,6 +293,7 @@
     <MESSAGE value="Day-10 Bonus" />
     <MESSAGE value="Day-14 recap on Day-15 and also todo list and function added" />
     <MESSAGE value="Day-15 main function added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day-15 main function added" />
+    <MESSAGE value="Day-15 import time module and use strftime" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day-15 import time module and use strftime" />
   </component>
 </project>
