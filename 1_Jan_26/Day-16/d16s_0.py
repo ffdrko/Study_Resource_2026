@@ -7,7 +7,7 @@ def read_todo(filepath = FILEPATH):
 
 
 def write_todo(list_args, filepath = FILEPATH):
-    with open(filepath) as file:
+    with open(filepath, 'w') as file:
         file.writelines(list_args)
 
 
