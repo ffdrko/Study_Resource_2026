@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-17 adding front">
-      <change afterPath="$PROJECT_DIR$/Day-17/functions.py" afterDir="false" />
+    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-17 import add feature in gui and close statement">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day-17/File/todo_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day-17/File/todo_list.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day-17/d17s_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day-17/d17s_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -400,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769443673751</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Day-17 import add feature in gui and close statement">
+      <option name="closed" value="true" />
+      <created>1769444166886</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1769444166886</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,6 +443,7 @@
     <MESSAGE value="Day-15 Bug Fixed." />
     <MESSAGE value="Day-16 recap on Day-17" />
     <MESSAGE value="Day-17 adding front" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day-17 adding front" />
+    <MESSAGE value="Day-17 import add feature in gui and close statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day-17 import add feature in gui and close statement" />
   </component>
 </project>
