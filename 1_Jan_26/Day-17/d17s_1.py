@@ -1,3 +1,4 @@
+import functions
 import FreeSimpleGUI as Sg
 
 label = Sg.Text("Type in todo: ")
@@ -12,5 +13,13 @@ while True:
     event, value = window.read()
     print(event)
     print(value)
+    match event:
+        case "Add":
+            todo_list = functions.read_todo()
+            todo_item = value['Todo']
+            todo_list.append(todo_item + '\n')
+            functions.write_todo(todo_list)
+        case Sg.WIN_CLOSED:
+            break
 
 window.close()
