@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-15 Bug Fixed.">
-      <change afterPath="$PROJECT_DIR$/Day-17/d15s_0.py" afterDir="false" />
+    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-16 recap on Day-17">
+      <change afterPath="$PROJECT_DIR$/Day-17/File/todo_list.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day-17/d17s_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +62,7 @@
     "Python.d15s_0.executor": "Run",
     "Python.d15s_1.executor": "Run",
     "Python.d15s_2.executor": "Run",
+    "Python.d17s_1.executor": "Run",
     "Python.d9s_0.executor": "Run",
     "Python.d9s_2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,7 +73,7 @@
     "last_opened_file_path": "D:/FFD WORK/FFD/Study_Resource_2026/1_Jan_26"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.d15s_0">
+  <component name="RunManager" selected="Python.d17s_1">
     <configuration name="A15S_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
@@ -85,28 +88,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-15/Assignment/A15S_0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="b1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="1_Jan_26" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-15/Bonus" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-15/Bonus/b1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="d15s_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="d17s_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="1_Jan_26" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,7 +153,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-17/d15s_0.py" />
+      <option name="SCRIPT_NAME" value="D:\FFD WORK\FFD\Study_Resource_2026\1_Jan_26\Day-17\d17s_0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="d17s_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="1_Jan_26" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-17" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-17/d17s_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.d15s_0" />
+        <item itemvalue="Python.d17s_1" />
+        <item itemvalue="Python.d17s_0" />
         <item itemvalue="Python.b15g_0" />
         <item itemvalue="Python.b15g_1" />
         <item itemvalue="Python.A15S_0" />
-        <item itemvalue="Python.b1" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +377,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769236597920</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Day-16 recap on Day-17">
+      <option name="closed" value="true" />
+      <created>1769439830207</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1769439830207</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Day-16 recap on Day-17">
+      <option name="closed" value="true" />
+      <created>1769439835217</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1769439835217</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,6 +425,7 @@
     <MESSAGE value="Day-15 import json file and quiz app in Bonus" />
     <MESSAGE value="Day-15 Assignment 1 done." />
     <MESSAGE value="Day-15 Bug Fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day-15 Bug Fixed." />
+    <MESSAGE value="Day-16 recap on Day-17" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day-16 recap on Day-17" />
   </component>
 </project>
