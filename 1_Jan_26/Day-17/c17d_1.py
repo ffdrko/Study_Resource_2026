@@ -16,9 +16,9 @@ window = Sg.Window("My todo App",
 
 while True:
     event, value = window.read()
-    print(event)
-    print(value)
-    print(value['Todo_list'][0])
+    # print(event)
+    # print(value)
+    # print(value['Todo_list'][0])
     match event:
         case "Add":
             todo_list = functions.read_todo()
