@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-17 File Compressor gui done">
+    <list default="true" id="047dceb1-44f1-4dfa-9b0d-0e9f8bf1f146" name="Changes" comment="Day-17 File Compressor file browse and folder browse added">
+      <change afterPath="$PROJECT_DIR$/Day-17/Bonus/b1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day-17/File/demo_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day-17/Bonus/b0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day-17/Bonus/b0.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -461,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769617702375</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Day-17 File Compressor file browse and folder browse added">
+      <option name="closed" value="true" />
+      <created>1769617948933</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1769617948933</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,6 +510,7 @@
     <MESSAGE value="Day-17 add edit in gui" />
     <MESSAGE value="Day-17 code experiment" />
     <MESSAGE value="Day-17 File Compressor gui done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day-17 File Compressor gui done" />
+    <MESSAGE value="Day-17 File Compressor file browse and folder browse added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day-17 File Compressor file browse and folder browse added" />
   </component>
 </project>
