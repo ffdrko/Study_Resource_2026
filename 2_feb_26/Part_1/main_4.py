@@ -7,3 +7,8 @@ print("Your Learing Path:\n" \
 # print("\t- Python Basics")
 # print("\t- Data Engineering")
 # print("\t- AI")
+
+print("""Your Learing Path:
+ - Python Basics
+ - Data Engineering
+ - AI""")
