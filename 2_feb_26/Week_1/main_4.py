@@ -13,4 +13,4 @@ print("""Your Learing Path:
  - Data Engineering
  - AI""")
 
- print("FOLDER Name change.")
+print("FOLDER Name change.")
