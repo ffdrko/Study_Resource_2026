@@ -4,3 +4,7 @@ print(name,"is learning Python")
 print(name,"wants to become python expert")
 
 name = "Maria"
+
+print("My name is", name)
+print(name,"is learning Python")
+print(name,"wants to become python expert")
