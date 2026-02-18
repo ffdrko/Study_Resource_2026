@@ -1,2 +1,3 @@
 user_name = input("Enter your name: ")
-print("You are", user_name)
+country = "Germany" # Hardcoded value
+print(user_name, "comes from", country)
