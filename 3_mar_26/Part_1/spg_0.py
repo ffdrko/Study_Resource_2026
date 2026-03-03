@@ -8,4 +8,4 @@ problem-7
 """
 
 language = ["English", "Bangla", "Hindi"]
-print(language)
+print(type(language))
