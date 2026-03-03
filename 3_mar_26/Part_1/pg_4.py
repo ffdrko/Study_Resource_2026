@@ -1,2 +1,4 @@
 print("Enter a todo: ")
-input()
+user_task = input()
+
+print(user_task)
