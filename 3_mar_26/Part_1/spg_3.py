@@ -9,3 +9,11 @@ answers = ['Yes', 'No', 'Yes', 'No', 'No'
 
 # answers = ['Yes', 'No', 'Yes', 'No', 'No']
 
+"""
+Bug-2
+my_answer = input("What is your answer?")
+answers = ['Yes', 'No', 'Yes' 'No' my_answer]
+"""
+
+# my_answer = input("What is your answer?")
+# answers = ['Yes', 'No', 'Yes' 'No', my_answer]
