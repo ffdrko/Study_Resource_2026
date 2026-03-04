@@ -21,5 +21,27 @@ print(upper(greeting))
 However, the program returns an error. Can you help fix the code, so it prints out HELLO?
 """
 
-greeting = "hello"
-print(greeting.upper())
+# greeting = "hello"
+# print(greeting.upper())
+
+"""
+Bug-3
+A programmer wrote the following program:
+
+countries = []
+
+while True:
+    country = input("Enter the country: ")
+    countries.append(country)
+print(countries)
+
+
+The program doesn't generate an error, but it doesn't produce the expected output. 
+"""
+
+countries = []
+
+while True:
+    country = input("Enter the country: ")
+    countries.append(country)
+    print(countries)
