@@ -1,4 +1,6 @@
 user_prompt = "Enter a todo: "
 
-while 2 > 1:
+while True:
     todo_item = input(user_prompt)
+    print(todo_item)
+    print("Next...")
