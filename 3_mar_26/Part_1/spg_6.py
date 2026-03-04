@@ -1,9 +1,6 @@
-"""
-problem-8
-Write a while loop which:
-1) has True as its condition, and
-2) prints out "Hello" repeatedly
-"""
+user_prompt = "Enter a todo: "
 
 while True:
-    print("Hello")
+    todo_item = input(user_prompt)
+    todo_list = [todo_item]
+    print(todo_list)
