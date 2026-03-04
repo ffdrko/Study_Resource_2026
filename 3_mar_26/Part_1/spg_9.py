@@ -3,5 +3,17 @@ Code Experiment-2
 Experiment-1 ( Infinite while-loop)
 """
 
+# while True:
+#     print("Hello infinite loop")
+
+"""
+Experiment-2 ( Inside vs outside the loop)
+"""
+
+todo_list = []
+
 while True:
-    print("Hello infinite loop")
+    user_prompt = "Enter a todo: "
+    todo_item = input(user_prompt)
+    print(todo_item.capitalize())
+    todo_list.append(todo_item)
