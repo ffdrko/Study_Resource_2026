@@ -1,0 +1,47 @@
+"""
+Day-2 Bug Fixed
+"""
+"""
+Bug-1
+The code below has two bugs. Hunt them down and fix them.
+
+while True
+print("Hello")
+"""
+
+# while True:
+#     print("Hello")
+
+"""
+Bug-2
+The programmer here is trying to convert the string "hello" to "HELLO" by using the upper() method:
+
+greeting = "hello"
+print(upper(greeting))
+However, the program returns an error. Can you help fix the code, so it prints out HELLO?
+"""
+
+# greeting = "hello"
+# print(greeting.upper())
+
+"""
+Bug-3
+A programmer wrote the following program:
+
+countries = []
+
+while True:
+    country = input("Enter the country: ")
+    countries.append(country)
+print(countries)
+
+
+The program doesn't generate an error, but it doesn't produce the expected output. 
+"""
+
+countries = []
+
+while True:
+    country = input("Enter the country: ")
+    countries.append(country)
+    print(countries)
