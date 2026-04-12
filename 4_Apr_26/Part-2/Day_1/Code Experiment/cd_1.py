@@ -1,5 +1,5 @@
-# Experiment-1: Code Errors
-user_prompt = "Enter a todo: "
+# Experiment-2: string quotes change double quote into single quote
+user_prompt = 'Enter a todo: '
 
 user_todo_1 = input(user_prompt)
 user_todo_2 = input(user_prompt)
