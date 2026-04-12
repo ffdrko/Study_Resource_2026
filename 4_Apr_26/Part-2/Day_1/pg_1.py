@@ -1,1 +1,2 @@
 print("Enter todo: ")
+input()
