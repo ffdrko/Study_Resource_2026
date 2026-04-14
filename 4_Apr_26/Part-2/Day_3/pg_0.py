@@ -9,3 +9,7 @@ while True:
             todo_list.append(user_todo)
         case "show":
             print(todo_list)
+        case "exit":
+            break
+
+print("Bye!")
