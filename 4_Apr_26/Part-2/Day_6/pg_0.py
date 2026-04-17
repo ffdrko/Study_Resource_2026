@@ -5,15 +5,17 @@ while True:
         case "add":
             file = open("File/todo_list.txt", "r")
             todo_list =file.readlines()
+            file.close()
 
             todo_item = input("Enter a todo item: ") + "\n"
             todo_list.append(todo_item)
             file = open("File/todo_list.txt", "w")
             file.writelines(todo_list)
+            file.close()
         case 'show':
             file = open("File/todo_list.txt", "r")
             todo_list =file.readlines()
-
+            file.close()
             for index, item in enumerate(todo_list):
                 print(f"{index + 1}. {item}")
         case 'edit':
