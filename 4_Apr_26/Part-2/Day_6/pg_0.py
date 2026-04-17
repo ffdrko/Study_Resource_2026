@@ -5,9 +5,9 @@ while True:
 
     match user_action:
         case "add":
-            todo_item = input("Enter a todo item: ")
+            todo_item = input("Enter a todo item: ") + "\n"
             todo_list.append(todo_item)
-            file = open("todo_list.txt", "w")
+            file = open("File/todo_list.txt", "w")
             file.writelines(todo_list)
         case 'show':
             for index, item in enumerate(todo_list):
