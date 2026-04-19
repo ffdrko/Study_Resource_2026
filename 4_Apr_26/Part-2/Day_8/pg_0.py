@@ -40,10 +40,14 @@ while True:
             item_num = int(input("Enter the number of todo item: "))
             item_num -= 1
 
+            complete_todo = todo_list[item_num]
+
             todo_list.pop(item_num)
 
             with open("File/todo_list.txt", "w") as file:
                 file.writelines(todo_list)
+            
+            print(f"{complete_todo.strip("\n")} is mark down and removed from the list.")
         
         case 'exit':
             break
