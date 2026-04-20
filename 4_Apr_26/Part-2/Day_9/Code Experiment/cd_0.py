@@ -2,7 +2,7 @@
 while True:
     user_action = input("Tpye add, show, edit, complete or exit: ")
 
-    if "add" in user_action or 'plus' in user_action:
+    if "add" in user_action or 'new' in user_action:
         todo_item = user_action[4:] + "\n"
 
         with open("File/todo_list.txt", "r") as file:
