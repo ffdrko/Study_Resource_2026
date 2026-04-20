@@ -21,7 +21,7 @@ while True:
             print(f"{index + 1}. {item}")
     
     elif "edit" in user_action:
-        number = int(input("Number of the todo to edit: "))
+        number = int(user_action[5:])
         number = number - 1
 
         with open("File/todo_list.txt", "r") as file:
@@ -46,3 +46,5 @@ while True:
             file.writelines(todos)
     elif "exit" in user_action:
         break
+    else:
+        print("Command is not valid")
