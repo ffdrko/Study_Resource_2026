@@ -38,16 +38,20 @@ while True:
             print("After edit, please enter a valid number.")
             continue
     elif user_action.startswith("complete"):
-        todo_number = int(user_action[9:])
-        todo_number -= 1
+        try:
+            todo_number = int(user_action[9:])
+            todo_number -= 1
 
-        with open("File/todo_list.txt", "r") as file:
-            todo_list = file.readlines()
+            with open("File/todo_list.txt", "r") as file:
+                todo_list = file.readlines()
 
-        todo_list.pop(todo_number)
+            todo_list.pop(todo_number)
 
-        with open("File/todo_list.txt", "w") as file:
-            file.writelines(todo_list)
+            with open("File/todo_list.txt", "w") as file:
+                file.writelines(todo_list)
+        except IndexError:
+            print("There is no item with that number.")
+            continue
     elif user_action.startswith("exit"):
         break
     else:
