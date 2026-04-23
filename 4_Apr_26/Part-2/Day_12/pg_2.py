@@ -49,6 +49,7 @@ while True:
             todo_list.pop(number)
 
             write_todo("File/todo_items.txt", todo_list)
+            
         except ValueError:
             print("Your command is not valid.")
             continue
