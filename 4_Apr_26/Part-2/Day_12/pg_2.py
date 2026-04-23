@@ -35,7 +35,7 @@ while True:
             new_todo = input("Enter the new todo item: ")
             todo_list[number] = new_todo + "\n"
 
-            write_todo("File/todo_items.txt", todo_list)
+            write_todo(file_path="File/todo_items.txt", todo_list_local=todo_list)
 
         except ValueError:
             print("Your command is not valid.")
@@ -49,7 +49,7 @@ while True:
             todo_list.pop(number)
 
             write_todo("File/todo_items.txt", todo_list)
-            
+
         except ValueError:
             print("Your command is not valid.")
             continue
