@@ -1,2 +1,3 @@
 edit the code base
 read the functions
+read the paper
