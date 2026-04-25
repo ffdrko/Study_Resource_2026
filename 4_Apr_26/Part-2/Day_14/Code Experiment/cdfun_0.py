@@ -18,6 +18,7 @@ def write_todo(todo_list_local, file_path = "File/todo_item.txt"):
 
 
 print("This is a module for handling todo items.")
+print(x)
 # This block will only execute if this script is run directly, and not when imported as a module.
 if __name__ == "__main__":
     print("This is a module for handling todo items.")
