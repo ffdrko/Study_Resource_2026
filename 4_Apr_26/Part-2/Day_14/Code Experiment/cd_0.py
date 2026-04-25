@@ -1,4 +1,4 @@
-# Experiment - 2 check the error of module file from the main file
+# Experiment - 3 how to avoid error of module
 # from func_0 import get_todo, write_todo
 import cdfun_0 as func_0
 
