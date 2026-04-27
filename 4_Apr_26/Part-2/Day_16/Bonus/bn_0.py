@@ -6,7 +6,7 @@ label_1_button = sg.FileBrowse("Choose")
 
 label_2 = sg.Text("Select file destination: ")
 label_2_input = sg.InputText()
-label_2_button = sg.FileBrowse("Add File")
+label_2_button = sg.FileBrowse("Choose")
 
 window = sg.Window("File compressor", layout = [
 [label_1, label_1_input, label_1_button], 
