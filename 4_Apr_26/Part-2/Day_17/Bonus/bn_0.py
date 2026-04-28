@@ -1,4 +1,5 @@
 import FreeSimpleGUI as sg
+import zip
 
 label_1 = sg.Text("Select a file to compress: ")
 label_1_input = sg.InputText()
@@ -21,6 +22,9 @@ while True:
     
     filepaths  = values['files'].split(";")
     folderpaths = values['folder']
+    
+    if event == "Compress":
+        zip.make_archive(filepaths, folderpaths + "/archive.zip")
 
     if event == sg.WIN_CLOSED:
         break
