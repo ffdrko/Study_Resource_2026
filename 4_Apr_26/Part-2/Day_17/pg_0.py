@@ -9,7 +9,10 @@ window = sg.Window("My To-Do App", layout=
     [label], 
     [input_box, and_button]
 ], font=('Helvetica', 20))
-event, values = window.read()
-print(event)
-print(values)
+
+while True:
+    event, values = window.read()
+    print(event)
+    print(values)
+
 window.close()
