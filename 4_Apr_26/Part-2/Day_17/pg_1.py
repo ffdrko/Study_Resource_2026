@@ -29,16 +29,18 @@ while True:
             functions_0.write_todo(todo_list)
             window['todo_list'].update(todo_list)
         case "Edit":
-            todo_item = values['todo_list'][0]
-            new_todo = values['todo'] + "\n"
+            if values['todo_list']:  # Check if an item is selected
+                todo_item = values['todo_list'][0]
+                new_todo = values['todo'] + "\n"
 
-            todo_list = functions_0.get_todo()
-            index = todo_list.index(todo_item)  # Find the index of the selected todo item
-            todo_list[index] = new_todo  # Replace the selected todo item with the updated version
-            functions_0.write_todo(todo_list)
-            window['todo_list'].update(todo_list)
+                todo_list = functions_0.get_todo()
+                index = todo_list.index(todo_item)  # Find the index of the selected todo item
+                todo_list[index] = new_todo  # Replace the selected todo item with the updated version
+                functions_0.write_todo(todo_list)
+                window['todo_list'].update(todo_list)
         case "todo_list":
-            window['todo'].update(values['todo_list'][0])
+            if values['todo_list']:  # Check if an item is selected
+                window['todo'].update(values['todo_list'][0])
         case sg.WIN_CLOSED:
             break
 
