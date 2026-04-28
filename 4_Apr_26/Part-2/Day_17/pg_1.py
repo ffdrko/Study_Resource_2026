@@ -37,6 +37,8 @@ while True:
             todo_list[index] = new_todo  # Replace the selected todo item with the updated version
             functions_0.write_todo(todo_list)
             window['todo_list'].update(todo_list)
+        case "todo_list":
+            window['todo'].update(values['todo_list'][0])
         case sg.WIN_CLOSED:
             break
 
