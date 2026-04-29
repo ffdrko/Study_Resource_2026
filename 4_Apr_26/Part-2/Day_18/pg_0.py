@@ -19,7 +19,11 @@ window = sg.Window("My To-Do App", layout=
     [label], 
     [input_box, and_button],
     [list_box, edit_button, complete_button], [exit_button]
-], font=('Helvetica', 20))
+], font=('Helvetica', 20), finalize=True)
+
+# Update clock initially
+current_time = time.strftime("%B %d, %H:%M:%S")
+window['clock'].update(f"Current Time: {current_time}")
 
 while True:
     event, values = window.read(timeout=1000)
@@ -27,18 +31,16 @@ while True:
     if event == sg.WINDOW_CLOSED:
         break
     
-    if event is None:
-        # Update clock every second (only if window is still open)
+    # Update clock every second (only if window is open)
+    if event is None or isinstance(event, str):
         try:
             current_time = time.strftime("%B %d, %H:%M:%S")
             window['clock'].update(f"Current Time: {current_time}")
         except:
             break
-        continue
     
-    print(event)
-    print(values)
-    print(values['todo_list'])
+    if event is None:
+        continue
 
     match event:
         case "Add":
