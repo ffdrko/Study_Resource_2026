@@ -33,3 +33,5 @@ while True:
             window['output'].update(f"{feet} feet and {inches} inches is equal to {centimeters:.2f} cm", text_color="green")
         except ValueError:
             window['output'].update("Please enter valid numbers for feet and inches.", text_color="red")
+
+window.close()
