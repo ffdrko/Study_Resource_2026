@@ -36,14 +36,19 @@ while True:
             window['todo_list'].update(todo_list)
         case "Edit":
             if values['todo_list']:  # Check if an item is selected
-                todo_item = values['todo_list'][0]
-                new_todo = values['todo'] + "\n"
+                try:
+                    todo_item = values['todo_list'][0]
+                    new_todo = values['todo'] + "\n"
 
-                todo_list = functions_0.get_todo()
-                index = todo_list.index(todo_item)  # Find the index of the selected todo item
-                todo_list[index] = new_todo  # Replace the selected todo item with the updated version
-                functions_0.write_todo(todo_list)
-                window['todo_list'].update(todo_list)
+                    todo_list = functions_0.get_todo()
+                    index = todo_list.index(todo_item)  # Find the index of the selected todo item
+                    todo_list[index] = new_todo  # Replace the selected todo item with the updated version
+                    functions_0.write_todo(todo_list)
+                    window['todo_list'].update(todo_list)
+                except IndexError:
+                    sg.popup("Please select an item to edit.", title="Alert", font=('Helvetica', 20))
+            else:
+                sg.popup("Please select an item to edit.", title="Alert", font=('Helvetica', 20))
         case "todo_list":
             if values['todo_list']:  # Check if an item is selected
                 window['todo'].update(values['todo_list'][0])
@@ -54,6 +59,8 @@ while True:
                 todo_list.remove(todo_item)  # Remove the selected todo item using pop method
                 functions_0.write_todo(todo_list)
                 window['todo_list'].update(todo_list)
+            else:
+                sg.popup("Please select an item to complete.", title="Alert", font=('Helvetica', 20))
         case "Exit":
              break
         case sg.WIN_CLOSED:
