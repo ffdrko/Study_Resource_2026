@@ -1,5 +1,6 @@
 import functions as functions_0
 import FreeSimpleGUI as sg
+import time
 
 label = sg.Text("Type in a todo")
 input_box = sg.InputText(tooltip="Enter todo", key="todo")
@@ -29,14 +30,22 @@ while True:
 
     match event:
         case "Add":
-            todo_list = functions_0.get_todo()
-            new_todo = values['todo'] + "\n"
-            todo_list.append(new_todo)
-            functions_0.write_todo(todo_list)
-            window['todo_list'].update(todo_list)
+            try:
+                if values['todo'].strip() == "":
+                    sg.popup("Please enter a todo item.", title="Alert", font=('Helvetica', 20))
+                else:
+                    todo_list = functions_0.get_todo()
+                    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                    new_todo = f"[{timestamp}] {values['todo']}\n"
+                    todo_list.append(new_todo)
+                    functions_0.write_todo(todo_list)
+                    window['todo_list'].update(todo_list)
+                    window['todo'].update("")
+            except Exception as e:
+                sg.popup(f"Error adding todo: {str(e)}", title="Error", font=('Helvetica', 20))
         case "Edit":
-            if values['todo_list']:  # Check if an item is selected
-                try:
+            try:
+                if values['todo_list']:  # Check if an item is selected
                     todo_item = values['todo_list'][0]
                     new_todo = values['todo'] + "\n"
 
@@ -45,10 +54,8 @@ while True:
                     todo_list[index] = new_todo  # Replace the selected todo item with the updated version
                     functions_0.write_todo(todo_list)
                     window['todo_list'].update(todo_list)
-                except IndexError:
-                    sg.popup("Please select an item to edit.", title="Alert", font=('Helvetica', 20))
-            else:
-                sg.popup("Please select an item to edit.", title="Alert", font=('Helvetica', 20))
+            except IndexError:
+                sg.popup("Please select an item to edit.",  font=('Helvetica', 20))
         case "todo_list":
             if values['todo_list']:  # Check if an item is selected
                 window['todo'].update(values['todo_list'][0])
