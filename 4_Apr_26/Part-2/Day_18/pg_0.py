@@ -1,6 +1,11 @@
 import functions as functions_0
 import FreeSimpleGUI as sg
 import time
+import os
+
+if not os.path.exists("File/todo_list.txt"):
+    with open("File/todo_list.txt", "w") as file:
+        pass
 
 sg.theme("BluePurple")
 label = sg.Text("Type in a todo")
