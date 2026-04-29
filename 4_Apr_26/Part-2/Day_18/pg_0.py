@@ -9,11 +9,12 @@ list_box = sg.Listbox(values=functions_0.get_todo(), key="todo_list",
                       size=[45, 10])
 edit_button = sg.Button("Edit")
 complete_button = sg.Button("Complete")
+exit_button = sg.Button("Exit")
 window = sg.Window("My To-Do App", layout=
 [
     [label], 
     [input_box, and_button],
-    [list_box, edit_button, complete_button]
+    [list_box, edit_button, complete_button], [exit_button]
 ], font=('Helvetica', 20))
 
 while True:
