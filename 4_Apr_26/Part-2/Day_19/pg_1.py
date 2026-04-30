@@ -14,8 +14,13 @@ st.subheader("A simple todo app built with Streamlit")
 st.write("This is a simple todo app built with Streamlit. " \
 "You can add tasks to your todo list and mark them as completed.")
 
-for todo_item in todo_list:
-    st.checkbox(todo_item)
+for index, todo_item in enumerate(todo_list):
+   checkbox = st.checkbox(todo_item, key= todo_item)
+   if checkbox:
+       todo_list.pop(index)
+       functions.write_todo(todo_list)
+       del st.session_state[todo_item]
+       st.rerun()
 
 st.text_input(label="Enter a todo item", placeholder="Todo item", on_change= add_todo, key= "new_todo")
 
