@@ -1,4 +1,4 @@
-# Experiment - 1 version control
+# Experiment - 2 adding html 
 
 import streamlit as st
 import functions
@@ -14,7 +14,7 @@ def add_todo():
 st.title("My Todo App")
 st.subheader("A simple todo app built with Streamlit")
 st.write("This is a simple todo app built with Streamlit. " \
-"You can add tasks to your todo list and mark them as completed.")
+"<b>You can add tasks to your todo list and mark them as completed.</b>", unsafe_allow_html=True)
 
 st.text_input(label="Enter a todo item", placeholder="Todo item", on_change= add_todo, key= "new_todo")
 
