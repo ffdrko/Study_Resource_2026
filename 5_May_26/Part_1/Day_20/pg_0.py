@@ -10,3 +10,7 @@ height = 1.745
 
 name = input("what is your name? ")
 print(name)
+
+# Converting to another type
+age = int(input("what is your age? "))
+print(age)
