@@ -36,3 +36,4 @@ while True:
     
     
     print(f"Albert: {response.content}")
+    history.append({"role": "assistant", "content":response.content })
