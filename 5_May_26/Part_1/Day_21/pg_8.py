@@ -1,72 +1,74 @@
 from dotenv import load_dotenv
 import os
-
-import gradio
+import gradio as gr
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.output_parsers import StrOutputParser
 
-# Point directly to the file inside the env folder
-load_dotenv(dotenv_path=".env\.env")
+# Fix path (forward slash)
+load_dotenv(dotenv_path=".env/.env")
 
 gemini_key = os.getenv("GEMINI_API_KEY")
 
 system_prompt = """
     You are Einstein
-    Answer question through Einstein's questioning and reasoning...
-    You will speak from your point of view, You will share personal things from
-    your life even the user don't ask for it, for example, if the user ask about the 
-    theory of relativity, you will share your personal experiences with it and not only
-    explain the theory, answer in 2 sentence, you should have a sense of humor.
+    Answer questions through Einstein's questioning and reasoning...
+    Speak from your point of view, share personal things from your life,
+    even if the user doesn’t ask. Keep answers to 2 sentences, with humor.
 """
 
 llm = ChatGoogleGenerativeAI(
-    model = "gemini-2.5-flash",
-    google_api_key = gemini_key,
-    temperature = 0.5
+    model="gemini-2.5-flash",
+    google_api_key=gemini_key,
+    temperature=0.5
 )
+
 prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
-    (MessagesPlaceholder(variable_name="history")),
-    ("user", "{input}")]
-)
+    MessagesPlaceholder(variable_name="history"),
+    ("user", "{input}")
+])
 
-chain = prompt | llm | StrOutputParser()#  here | means output of the prompt will go as input into llm
+chain = prompt | llm | StrOutputParser()
 
 print("I am Albert, how can I help you today?")
-history = []
 
-# while True:
-#     user_input = input("You: ")
-#     if user_input == "exit":
-#         break
-    
-#     response = chain.invoke({"input": user_input, "history": history})
-    
-    
-#     print(f"Albert: {response}")
-#     history.append(HumanMessage(content=user_input))
-#     history.append(AIMessage(content=response))
 
-pages = gradio.Blocks(
-    title = "Chat with Einstein",
-    theme = gradio.themes.Soft()
-)
+def chat(user_input, hist):
+    # Convert Gradio history into LangChain format
+    langchain_hist = []
+    for item in hist:
+        if item["role"] == "user":
+            langchain_hist.append(HumanMessage(content=item["content"]))
+        elif item["role"] == "assistant":
+            langchain_hist.append(AIMessage(content=item["content"]))
 
-with pages:
-    gradio.Markdown(
+    # Get response from chain
+    response = chain.invoke({"input": user_input, "history": langchain_hist})
+
+    # Return TWO outputs: clear textbox + updated history
+    return "", hist + [
+        {"role": "user", "content": user_input},
+        {"role": "assistant", "content": response}
+    ]
+
+
+# Build Gradio UI
+with gr.Blocks(title="Chat with Einstein", theme=gr.themes.Soft()) as pages:
+    gr.Markdown(
         """
         # Chat with Einstein
         Welcome to your personal conversation with Albert Einstein!
-        
         """
     )
 
-    Chatbot = gradio.Chatbot()
-    msg = gradio.Textbox()
+    chatbot = gr.Chatbot()
+    msg = gr.Textbox()
+    msg.submit(chat, [msg, chatbot], [msg, chatbot])
 
-    clear = gradio.Button("Clear Chat")
+    clear = gr.Button("Clear Chat")
+    clear.click(lambda: ("", []), None, [msg, chatbot])
 
-pages.launch(share = True)
+pages.launch(share=True)
