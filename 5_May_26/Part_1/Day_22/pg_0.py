@@ -6,4 +6,7 @@ pdf.add_page()
 pdf.set_font(family="Times", style="B", size=12)
 pdf.cell(w= 0, h=12, txt = "hello there!", align= 'L', ln=1, border=1)
 
-pdf.output("demo.pdf")
+pdf.set_font(family="Times", style="B", size=10)
+pdf.cell(w= 5, h=12, txt = "I am Fahim!", align= 'L', ln=1, border=1)
+
+pdf.output("demo_1.pdf")
