@@ -1,0 +1,2 @@
+Date:06 May 2026
+Agentic AI refers to artificial intelligence systems that don’t just generate outputs but actively pursue goals, make decisions, and take actions autonomously. Unlike traditional chatbots, agentic AI operates in loops—planning, acting, observing, and adapting until a task is completed
