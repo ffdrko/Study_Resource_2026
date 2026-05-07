@@ -18,3 +18,16 @@ for score in scores:
 
 average = sum(scores) / len(scores)
 
+# Calculate the average score and grade
+if average >= 90:
+    final_grade = "A"
+elif average >= 80:
+    final_grade = "B"
+elif average >= 70:
+    final_grade = "C"
+elif average >= 60:
+    final_grade = "D"
+else:
+    final_grade = "F"
+
+print(f"Average Score: {average:.2f} → Final Grade: {final_grade}")
