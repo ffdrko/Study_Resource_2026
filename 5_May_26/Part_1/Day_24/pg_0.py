@@ -14,4 +14,10 @@ for file_ded in filepath:
     invoice_nr = filename.split("-")[0]
     pdf.set_font(family="Times", size= 16, style= "B")
     pdf.cell(w=50, h=8, txt= f"Invoice name:{invoice_nr}")
+
+    time_Date = filename.split("-")[1]
+    pdf.set_font(family="Times", size= 16, style= "B")
+    pdf.cell(w=50, h=8, txt= f"Date:{time_Date}")
+
+
     pdf.output(f"Pdf/{invoice_nr}.pdf")
