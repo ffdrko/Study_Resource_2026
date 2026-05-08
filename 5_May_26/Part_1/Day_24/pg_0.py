@@ -13,7 +13,7 @@ for file_ded in filepath:
     filename = Path(file_ded).stem
     invoice_nr = filename.split("-")[0]
     pdf.set_font(family="Times", size= 16, style= "B")
-    pdf.cell(w=50, h=8, txt= f"Invoice name:{invoice_nr}")
+    pdf.cell(w=50, h=8, txt= f"Invoice name:{invoice_nr}", ln=1)
 
     time_Date = filename.split("-")[1]
     pdf.set_font(family="Times", size= 16, style= "B")
