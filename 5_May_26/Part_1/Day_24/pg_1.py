@@ -19,8 +19,9 @@ for file_ded in filepath:
     pdf.set_font(family="Times", size= 16, style= "B")
     pdf.cell(w=50, h=8, txt= f"Date:{time_Date}", ln=1)
 
-    col = list(df.columns)
-    pdf.set_font(family="Times", size = 10)
+    coln = df.columns
+    col = [item.replace("_", " ").title() for item in coln]
+    pdf.set_font(family="Times", size = 10 ,style="B")
     pdf.set_text_color(80, 80, 80)
     pdf.cell(w=30, h=8, txt=col[0], border=1)
     pdf.cell(w=70, h=8, txt=col[1], border=1)
