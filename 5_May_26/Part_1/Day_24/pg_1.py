@@ -19,6 +19,15 @@ for file_ded in filepath:
     pdf.set_font(family="Times", size= 16, style= "B")
     pdf.cell(w=50, h=8, txt= f"Date:{time_Date}", ln=1)
 
+    col = list(df.columns)
+    pdf.set_font(family="Times", size = 10)
+    pdf.set_text_color(80, 80, 80)
+    pdf.cell(w=30, h=8, txt=col[0], border=1)
+    pdf.cell(w=70, h=8, txt=col[1], border=1)
+    pdf.cell(w=70, h=8, txt=col[2], border=1)
+    pdf.cell(w=70, h=8, txt=col[3], border=1)
+    pdf.cell(w=70, h=8, txt=col[4], border=1, ln=1)
+
     for index, row in df.iterrows():
         pdf.set_font(family="Times", size = 10)
         pdf.set_text_color(80, 80, 80)
