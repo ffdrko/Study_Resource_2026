@@ -4,3 +4,5 @@ avg = sum(lista) / len(lista)
 print(f"The sum of the list is {sum(lista)}")
 
 print(f"Average: {avg}")
+
+print(f"Max: {max(lista)} and Min: {min(lista)}")
