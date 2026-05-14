@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { FormEvent, ReactNode } from 'react';
 import { BrowserRouter as Router, Link, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import axios from 'axios';
 import './App.css';
 import apiClient from './api/apiClient';
 import { useAuthStore } from './store/authStore';
@@ -70,6 +71,32 @@ type ChatResponse = {
 };
 
 const formatCurrency = (value: number) => new Intl.NumberFormat('en-BD').format(value);
+
+function getApiErrorMessage(error: unknown, fallback: string) {
+  if (axios.isAxiosError(error)) {
+    const responseData = error.response?.data as
+      | { detail?: string; message?: string; non_field_errors?: string[] }
+      | undefined;
+
+    if (responseData?.message) {
+      return responseData.message;
+    }
+    if (responseData?.detail) {
+      return responseData.detail;
+    }
+    if (responseData?.non_field_errors?.length) {
+      return responseData.non_field_errors[0];
+    }
+    if (error.response?.status === 401) {
+      return 'Your session is no longer valid. Please sign in again.';
+    }
+    if (error.response?.status === 400) {
+      return 'Some trip details are invalid. Please review the dates, destination, and budget fields.';
+    }
+  }
+
+  return fallback;
+}
 
 function AppShell() {
   const [destinations, setDestinations] = useState<Destination[]>([]);
@@ -238,7 +265,7 @@ function LoginPage() {
       navigate('/chat');
     } catch (submitError) {
       console.error(submitError);
-      setError('Login failed. Check your email and password.');
+      setError(getApiErrorMessage(submitError, 'Login failed. Check your email and password.'));
     } finally {
       setIsSubmitting(false);
     }
@@ -292,7 +319,7 @@ function RegisterPage() {
       navigate('/login');
     } catch (submitError) {
       console.error(submitError);
-      setError('Registration failed. Try a different email or username.');
+      setError(getApiErrorMessage(submitError, 'Registration failed. Try a different email or username.'));
     } finally {
       setIsSubmitting(false);
     }
@@ -445,7 +472,7 @@ function PlannerPage({ destinations, loading }: { destinations: Destination[]; l
       }
     } catch (submitError) {
       console.error(submitError);
-      setError('We could not generate the plan. Please review the trip details and try again.');
+      setError(getApiErrorMessage(submitError, 'We could not generate the plan. Please review the trip details and try again.'));
     } finally {
       setIsSubmitting(false);
     }
