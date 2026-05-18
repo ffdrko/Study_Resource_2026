@@ -12,3 +12,8 @@ c = 1.56
 
 print(c)
 print("The type of a is", type(c))
+
+d = False
+
+print(d)
+print("The type of a is", type(d))
