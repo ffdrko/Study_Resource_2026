@@ -7,3 +7,8 @@ b = 123
 
 print(b)
 print("The type of a is", type(b))
+
+c = 1.56
+
+print(c)
+print("The type of a is", type(c))
