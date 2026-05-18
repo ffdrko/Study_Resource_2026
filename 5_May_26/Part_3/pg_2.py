@@ -22,3 +22,8 @@ student_name = ['Fahim', 'Faisal', 'Deepto']
 
 print(student_name)
 print("The type of a is", type(student_name))
+
+country_name = ("BD", "IND", "PAK")
+
+print(country_name)
+print("The type of a is", type(country_name))
