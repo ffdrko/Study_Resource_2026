@@ -27,3 +27,12 @@ country_name = ("BD", "IND", "PAK")
 
 print(country_name)
 print("The type of a is", type(country_name))
+
+student_mark = {
+    "Fahim": 80,
+    "Faisal": 85,
+    "Deepto": 90
+}
+
+print(student_mark)
+print("The type of a is", type(student_mark))
