@@ -17,3 +17,8 @@ d = False
 
 print(d)
 print("The type of a is", type(d))
+
+student_name = ['Fahim', 'Faisal', 'Deepto']
+
+print(student_name)
+print("The type of a is", type(student_name))
