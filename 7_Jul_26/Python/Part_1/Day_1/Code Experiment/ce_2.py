@@ -6,4 +6,5 @@ while True:
     print(todo_item.capitalize())
     print(todo_item.title())
     todo_list.append(todo_item)
+
     print(todo_list)
