@@ -1,0 +1,8 @@
+a = input("Enter some input: ")
+print(a)
+print(type(a))
+print(a * 10)
+a = int(a)
+print(5 + a)
+print(a * 10)
+print(type(a))
