@@ -6,3 +6,6 @@ print(b)
 
 print(a.upper())
 print(a.lower())
+
+c = "Fahim"
+print(c.swapcase())
