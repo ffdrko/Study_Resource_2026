@@ -11,4 +11,6 @@ f_name = "Rahim"
 l_name = "Khan"
 
 txt = "My name is {first} {last} and I am {age} years old.".format(first=f_name, last=l_name, age=age)
+txt_2 = f"My name is {f_name} {l_name} and I am {age} years old."
 print(txt)
+print(txt_2)
