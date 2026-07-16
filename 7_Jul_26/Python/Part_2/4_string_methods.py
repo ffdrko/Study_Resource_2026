@@ -13,3 +13,5 @@ print(c.swapcase())
 d = "I love bananas"
 e = d.replace("bananas", "apples")
 print(e)
+
+print(d.count("a"))
