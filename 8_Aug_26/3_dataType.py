@@ -1,8 +1,10 @@
+# Take user name
 name = "Fahim"
 
 print(name)
 print(type(name))
 
+# Take user roll number
 roll = 10
 
 print(roll)
