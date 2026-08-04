@@ -5,3 +5,6 @@ print(a + b)
 print(a - b)
 print(a * b)
 print(a / b)
+
+name = "Fahim Faisal"
+print(name)
