@@ -1,0 +1,249 @@
+{
+  "machines": [
+    {
+      "id": "chest_press_machine",
+      "name": "Chest Press Machine",
+      "muscles": ["Chest", "Triceps", "Front Delts"],
+      "exercises": [
+        {
+          "name": "Seated Chest Press",
+          "sets": "3-4",
+          "reps": "8-12",
+          "tips": "Keep back flat on the pad, press without locking elbows hard",
+          "videoId": ""
+        },
+        {
+          "name": "Single-Arm Chest Press",
+          "sets": "3",
+          "reps": "10-12 each side",
+          "tips": "Great for fixing left-right strength imbalance",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "leg_press",
+      "name": "Leg Press Machine",
+      "muscles": ["Quads", "Glutes", "Hamstrings"],
+      "exercises": [
+        {
+          "name": "Standard Leg Press",
+          "sets": "3-4",
+          "reps": "8-12",
+          "tips": "Feet shoulder-width, never lock knees at the top",
+          "videoId": ""
+        },
+        {
+          "name": "Wide-Stance Leg Press",
+          "sets": "3",
+          "reps": "10-15",
+          "tips": "Higher + wider feet shifts work to glutes and hamstrings",
+          "videoId": ""
+        },
+        {
+          "name": "Calf Press on Leg Press",
+          "sets": "4",
+          "reps": "12-20",
+          "tips": "Press with the balls of your feet, pause at the top",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "lat_pulldown",
+      "name": "Lat Pulldown Machine",
+      "muscles": ["Lats", "Biceps", "Rear Delts"],
+      "exercises": [
+        {
+          "name": "Wide-Grip Lat Pulldown",
+          "sets": "3-4",
+          "reps": "8-12",
+          "tips": "Pull bar to upper chest, avoid leaning back too far",
+          "videoId": ""
+        },
+        {
+          "name": "Close-Grip / Neutral-Grip Pulldown",
+          "sets": "3",
+          "reps": "10-12",
+          "tips": "Squeeze shoulder blades together at the bottom",
+          "videoId": ""
+        },
+        {
+          "name": "Straight-Arm Pulldown",
+          "sets": "3",
+          "reps": "12-15",
+          "tips": "Keep arms almost straight, feel it purely in the lats",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "treadmill",
+      "name": "Treadmill",
+      "muscles": ["Legs", "Heart (Cardio)"],
+      "exercises": [
+        {
+          "name": "Steady-State Walk / Jog",
+          "sets": "1",
+          "reps": "20-40 min",
+          "tips": "Keep a pace where you can still talk comfortably",
+          "videoId": ""
+        },
+        {
+          "name": "Incline Interval Walk",
+          "sets": "1",
+          "reps": "20 min",
+          "tips": "Alternate 2 min incline / 2 min flat, great fat burner",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "dumbbell_rack",
+      "name": "Dumbbell Rack",
+      "muscles": ["Full Body (depends on exercise)"],
+      "exercises": [
+        {
+          "name": "Dumbbell Shoulder Press",
+          "sets": "3-4",
+          "reps": "8-12",
+          "tips": "Don't clang dumbbells together at the top",
+          "videoId": ""
+        },
+        {
+          "name": "Dumbbell Row",
+          "sets": "3-4",
+          "reps": "8-12 each arm",
+          "tips": "Pull with your elbow, not your hand",
+          "videoId": ""
+        },
+        {
+          "name": "Goblet Squat",
+          "sets": "3",
+          "reps": "10-15",
+          "tips": "Hold dumbbell at chest, keep torso upright",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "squat_rack",
+      "name": "Squat Rack",
+      "muscles": ["Quads", "Glutes", "Core"],
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "sets": "4-5",
+          "reps": "5-8",
+          "tips": "Brace your core, knees track over toes",
+          "videoId": ""
+        },
+        {
+          "name": "Overhead Press",
+          "sets": "3-4",
+          "reps": "6-10",
+          "tips": "Squeeze glutes to stop lower-back arching",
+          "videoId": ""
+        },
+        {
+          "name": "Barbell Lunge",
+          "sets": "3",
+          "reps": "10 each leg",
+          "tips": "Step long enough that front knee stays over ankle",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "cable_crossover",
+      "name": "Cable Crossover Machine",
+      "muscles": ["Chest", "Shoulders", "Arms"],
+      "exercises": [
+        {
+          "name": "High-to-Low Cable Fly",
+          "sets": "3",
+          "reps": "12-15",
+          "tips": "Slight elbow bend, hug a giant tree",
+          "videoId": ""
+        },
+        {
+          "name": "Low-to-High Cable Fly",
+          "sets": "3",
+          "reps": "12-15",
+          "tips": "Targets upper chest, squeeze at the top",
+          "videoId": ""
+        },
+        {
+          "name": "Triceps Rope Pushdown",
+          "sets": "3-4",
+          "reps": "10-15",
+          "tips": "Elbows pinned to sides, split rope at the bottom",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "shoulder_press_machine",
+      "name": "Shoulder Press Machine",
+      "muscles": ["Delts", "Triceps"],
+      "exercises": [
+        {
+          "name": "Seated Shoulder Press",
+          "sets": "3-4",
+          "reps": "8-12",
+          "tips": "Set seat so handles are at ear height",
+          "videoId": ""
+        },
+        {
+          "name": "Partial Rep Burnout",
+          "sets": "2",
+          "reps": "15-20 (top half)",
+          "tips": "Finish shoulders with light weight, top-half reps",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "leg_extension",
+      "name": "Leg Extension Machine",
+      "muscles": ["Quads"],
+      "exercises": [
+        {
+          "name": "Standard Leg Extension",
+          "sets": "3-4",
+          "reps": "12-15",
+          "tips": "Pause 1 second at the top, control the way down",
+          "videoId": ""
+        },
+        {
+          "name": "Single-Leg Extension",
+          "sets": "3",
+          "reps": "10-12 each leg",
+          "tips": "Fixes imbalances, go lighter than two-leg version",
+          "videoId": ""
+        }
+      ]
+    },
+    {
+      "id": "leg_curl",
+      "name": "Leg Curl Machine",
+      "muscles": ["Hamstrings"],
+      "exercises": [
+        {
+          "name": "Lying / Seated Leg Curl",
+          "sets": "3-4",
+          "reps": "10-15",
+          "tips": "Don't lift hips off the pad, slow negatives",
+          "videoId": ""
+        },
+        {
+          "name": "Single-Leg Curl",
+          "sets": "3",
+          "reps": "10-12 each leg",
+          "tips": "Great finisher after heavy compound lifts",
+          "videoId": ""
+        }
+      ]
+    }
+  ]
+}

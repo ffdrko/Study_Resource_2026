@@ -1,0 +1,10 @@
+chest_press_machine
+leg_press
+lat_pulldown
+treadmill
+dumbbell_rack
+squat_rack
+cable_crossover
+shoulder_press_machine
+leg_extension
+leg_curl
