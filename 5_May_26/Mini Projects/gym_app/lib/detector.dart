@@ -65,7 +65,9 @@ class TFLiteDetector implements Detector {
 
   List<List<List<List<double>>>> _preprocess(img.Image photo) {
     final resized = img.copyResize(photo,
-        width: _inputWidth, height: _inputHeight, interpolation: Interpolation.linear);
+        width: _inputWidth,
+        height: _inputHeight,
+        interpolation: img.Interpolation.linear);
     return [
       List.generate(
         _inputHeight,
@@ -82,8 +84,10 @@ class TFLiteDetector implements Detector {
 
   Object _allocateOutput(List<int> shape) {
     // Handles [1, N, C] and the transposed YOLOv8 export layout [1, C, N].
-    if (shape.length == 3) return List.generate(shape[1],
+    if (shape.length == 3) {
+      return List.generate(shape[1],
         (_) => List.filled(shape[2], 0.0), growable: false);
+    }
     throw UnsupportedError('Unexpected model output shape: $shape');
   }
 
@@ -145,9 +149,11 @@ class DemoDetector implements Detector {
   String? detect(img.Image photo) {
     if (_labels.isEmpty) return null;
     var hash = 0;
-    final step = max(1, photo.width * photo.height ~/ 5000);
-    for (var i = 0; i < photo.data!.length; i += step) {
-      hash += photo.data![i].toInt();
+    final total = photo.width * photo.height;
+    final step = max(1, total ~/ 5000);
+    for (var i = 0; i < total; i += step) {
+      final p = photo.getPixel(i % photo.width, i ~/ photo.width);
+      hash += p.r.toInt() + p.g.toInt() + p.b.toInt();
     }
     // Mix in a counter so repeated taps cycle through machines.
     return _labels[(hash + _counter++) % _labels.length];
