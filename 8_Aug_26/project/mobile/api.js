@@ -3,9 +3,7 @@
 import { Platform } from 'react-native';
 
 // Android emulator uses 10.0.2.2 to reach host machine; real devices need the LAN IP.
-export const API_URL = Platform.OS === 'android' && !Platform.isPad
-  ? 'http://10.0.2.2:3000' // emulator default — change to LAN IP for a real phone
-  : 'http://localhost:3000';
+export const API_URL = 'http://192.168.0.199:3000'; // PC's Wi-Fi IP — update if your network changes
 
 /**
  * Upload an image and OCR it.
