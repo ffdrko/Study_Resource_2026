@@ -17,6 +17,7 @@ import * as ImagePicker from 'expo-image-picker';
 import * as FileSystem from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
 import { ocrImage, formatText, exportDocx, API_URL } from './api';
+import { ocrOnDevice } from './onDeviceOcr';
 
 export default function App() {
   const [images, setImages] = useState([]); // [{ uri }]
@@ -50,23 +51,39 @@ export default function App() {
     setImages((prev) => prev.filter((_, i) => i !== index));
   }
 
-  // ---- OCR all images sequentially ----
+  // ---- OCR all images sequentially (on-device first, server fallback) ----
+  async function ocrSingle(uri) {
+    try {
+      const result = await ocrOnDevice(uri);
+      return { ...result, engine: 'on-device' };
+    } catch (e) {
+      // On-device OCR unavailable (e.g. Expo Go) — fall back to server Tesseract
+      const result = await ocrImage(uri);
+      return { ...result, engine: 'server' };
+    }
+  }
+
   async function runOcr() {
     if (!images.length) return;
     setBusy(true);
     setRawText('');
     const confidences = [];
+    let enginesUsed = new Set();
     try {
       for (let i = 0; i < images.length; i++) {
         setStatus(`OCR: image ${i + 1} of ${images.length}…`);
-        const { rawText: text, confidence } = await ocrImage(images[i].uri);
+        const { rawText: text, confidence, engine } = await ocrSingle(images[i].uri);
+        enginesUsed.add(engine);
         if (typeof confidence === 'number') confidences.push(confidence);
         setRawText((prev) => (prev ? prev + '\n\n' : '') + text);
       }
       const avg = confidences.length
         ? Math.round((confidences.reduce((a, b) => a + b, 0) / confidences.length) * 100)
         : null;
-      setStatus(`Done${avg !== null ? ` — confidence ${avg}%` : ''}`);
+      const engineLabel = enginesUsed.has('on-device')
+        ? 'on-device (Vision/ML Kit)'
+        : 'server (Tesseract)';
+      setStatus(`Done via ${engineLabel}${avg !== null ? ` — confidence ${avg}%` : ''}`);
     } catch (e) {
       setStatus('');
       Alert.alert('OCR failed', e.message);

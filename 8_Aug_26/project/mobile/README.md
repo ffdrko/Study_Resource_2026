@@ -29,18 +29,48 @@ export const API_URL = 'http://192.168.1.XX:3000'; // find with `ipconfig`
 - **Android emulator:** `http://10.0.2.2:3000` works automatically
 - **Real phone:** must use LAN IP, and phone + PC must be on the same Wi-Fi
 
-## Run
+## OCR engines
+
+SnapNote uses a two-tier OCR strategy:
+
+1. **On-device (preferred)** — `@react-native-ml-kit/text-recognition`:
+   - iOS wraps **Apple Vision** (same engine as Live Text) → runs on the Neural Engine, excellent for handwriting
+   - Android uses **Google ML Kit** v2 text recognition
+   - Fully offline, free, private — images never leave the phone
+2. **Server fallback** — Tesseract.js via `/api/ocr`, used automatically when the native module is unavailable (e.g., running in Expo Go)
+
+> Because the app includes native modules, it must run as a **development build**, not in Expo Go.
+
+## Run (development build)
+
+One-time native compile (requires Android Studio / Xcode):
 
 ```bash
-npx expo start
+npm run prebuild        # generates android/ and ios/ folders
+npm run android         # build & install on Android device/emulator
+# or
+npm run ios             # build & install on iOS simulator/device (macOS only)
 ```
 
-Scan the QR code with the Expo Go app (Android) or Camera app (iOS).
+Then start the JS dev server (hot reload works as usual):
+
+```bash
+npm start               # expo start --dev-client
+```
+
+### No Android Studio/Xcode? Use EAS Build (cloud)
+
+```bash
+npm install -g eas-cli
+eas login
+eas build --profile development --platform android
+```
+Install the resulting APK on your phone, then `npm start` and connect.
 
 ## Features
 
 - 📷 Camera capture or gallery multi-select
-- 🔍 Sequential OCR with progress status
+- 🧠 On-device OCR (Apple Vision / ML Kit) with server Tesseract fallback
 - ✏️ Editable extracted text before formatting
 - 👁 Live preview of headings/bullets/bold
 - ⬇️ Export `.docx` → native share sheet (save to Files, send via email/WhatsApp, etc.)
