@@ -31,13 +31,36 @@ async function buildDocx(blocks, title) {
     new Paragraph({ text: title, heading: HeadingLevel.TITLE }),
   ];
 
-  for (const block of blocks) {
+  // Assign a unique numbering instance to each run of numbered items so
+  // separate lists restart at 1 instead of continuing (1,2 → 3,4).
+  const numberedRefs = new Map(); // block index -> reference name
+  let listCounter = 0;
+  let inNumberedList = false;
+  blocks.forEach((block, idx) => {
+    if (block.type === 'numbered') {
+      if (!inNumberedList) {
+        listCounter++;
+        inNumberedList = true;
+      }
+      numberedRefs.set(idx, `numbered-list-${listCounter}`);
+    } else {
+      inNumberedList = false;
+    }
+  });
+
+  const usedRefs = [...new Set(numberedRefs.values())];
+
+  for (let i = 0; i < blocks.length; i++) {
+    const block = blocks[i];
     if (HEADING_MAP[block.type]) {
       children.push(new Paragraph({ heading: HEADING_MAP[block.type], children: runsFrom(block) }));
     } else if (block.type === 'bullet') {
       children.push(new Paragraph({ bullet: { level: 0 }, children: runsFrom(block) }));
     } else if (block.type === 'numbered') {
-      children.push(new Paragraph({ numbering: { reference: 'snapnote-numbered', level: 0 }, children: runsFrom(block) }));
+      children.push(new Paragraph({
+        numbering: { reference: numberedRefs.get(i), level: 0 },
+        children: runsFrom(block),
+      }));
     } else {
       children.push(new Paragraph({ children: runsFrom(block) }));
     }
@@ -45,20 +68,18 @@ async function buildDocx(blocks, title) {
 
   const doc = new Document({
     numbering: {
-      config: [
-        {
-          reference: 'snapnote-numbered',
-          levels: [
-            {
-              level: 0,
-              format: 'decimal',
-              text: '%1.',
-              alignment: 'start',
-              style: { paragraph: { indent: { left: 720, hanging: 360 } } },
-            },
-          ],
-        },
-      ],
+      config: usedRefs.map((reference) => ({
+        reference,
+        levels: [
+          {
+            level: 0,
+            format: 'decimal',
+            text: '%1.',
+            alignment: 'start',
+            style: { paragraph: { indent: { left: 720, hanging: 360 } } },
+          },
+        ],
+      })),
     },
     sections: [{ children }],
   });
