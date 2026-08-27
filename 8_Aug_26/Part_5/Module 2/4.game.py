@@ -1,9 +1,21 @@
-computer = 4
+import random
+computer = random.randint(1, 10)
+# computer = 4
 
-guess = int(input("Enter your guess: "))
+count = 3
 
-while guess != computer:
-    print("Wrong guess, Please Try again!")
+
+while count > 0:
     guess = int(input("Enter your guess: "))
 
-print("Nice u it's a match")
+    count = count - 1
+
+    if guess == computer:
+        print("Nice u it's a match")
+
+        break
+    else:
+        print("Wrong guess, Please Try again!")
+
+
+print("End of trail")
