@@ -10,7 +10,7 @@ age = 20
 
 if age >= 18:
     print("You are adult")
-elif age >= 13:
+elif age <18 and age >= 13:
     print("You are teen")
 else:
     print("You are child")
@@ -24,24 +24,24 @@ else:
 score = 85
 
 if score >= 90:
-    print("Grade A")
-elif score >= 80:
-    print("Grade B")
-elif score >= 70:
+    print("Grade is A")
+elif score >= 80 and score < 90:
+    print("Grade is B")
+elif score >= 70 and score < 80:
     print("Grade C")
 else:
-    print("Grade D")
+    print("Grade is D")
 
 # 3. Write a program that asks the user for their age and prints:
 #    - "You are eligible for driving" if age >= 18
 #    - "You are teen" if age >= 13 and age < 18
 #    - "You are child" if age < 13
 
-age = int(input("Enter your age: "))
+user_input = int(input("Enter your age: "))
 
-if age >= 18:
+if user_input >= 18:
     print("You are eligible for driving")
-elif age >= 13:
+elif user_input >= 13 and user_input < 18:
     print("You are teen")
 else:
     print("You are child")
