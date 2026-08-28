@@ -9,3 +9,10 @@ print(list(range(1, 5)))
 print(list(range(1, 11)))
 print(list(range(1, 11, 2)))
 print(list(range(1, 11, 3)))
+
+for item in ["Apple", "Banana", "Mango"]:
+    print(item)
+
+
+for item in range(7):
+    print(item)
