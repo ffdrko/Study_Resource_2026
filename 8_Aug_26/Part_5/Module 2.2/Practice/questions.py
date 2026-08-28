@@ -201,8 +201,10 @@ print(f"Total vowels inside the sentence is {count}")
 # TODO:
 n = 5
 
-for i in range(n+1):
-    print("*" * i)
+for i in range(1, n+1):
+    for j in range(i):
+        print("*", end="")
+    print()
 
 stars = ["*"*i for i in range(1,n+1)]
 
