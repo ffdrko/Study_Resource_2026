@@ -23,7 +23,7 @@ print(triple_evens)
 # Part B
 words = ["apple", "banana", "apricot", "cherry", "avocado", "blueberry", "almond"]
 # Write Part B comprehension below:
-long_word_initials =[x.upper() for x in words if len(x) > 6]
+long_word_initials ={x.upper() for x in words if len(x) > 6}
 print(long_word_initials)
 
 # Part C
