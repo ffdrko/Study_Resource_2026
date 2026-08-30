@@ -17,12 +17,14 @@ Given `inventory`:
 # Part A
 numbers = [14, 7, 22, 9, 30, 11, 40, 15]
 # Write Part A comprehension below:
-
+triple_evens = [x * 3 for x in numbers if x % 2 == 0]
+print(triple_evens)
 
 # Part B
 words = ["apple", "banana", "apricot", "cherry", "avocado", "blueberry", "almond"]
 # Write Part B comprehension below:
-
+long_word_initials =[x.upper() for x in words if len(x) > 6]
+print(long_word_initials)
 
 # Part C
 inventory = {
@@ -34,4 +36,5 @@ inventory = {
     "Webcam": 0
 }
 # Write Part C comprehension below:
-
+in_stock_items = {item : f"Avaiable : {quant} units" for item, quant in inventory.items() if quant > 0}
+print(in_stock_items)

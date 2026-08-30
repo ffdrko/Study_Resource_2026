@@ -27,3 +27,9 @@ salaries = {
 
 # Write your code below:
 
+for name, salary in salaries.items():
+    if salary >= 50000:
+        print(f"{name} earns ${salary} per month.")
+
+for name in salaries.keys():
+    print(name)

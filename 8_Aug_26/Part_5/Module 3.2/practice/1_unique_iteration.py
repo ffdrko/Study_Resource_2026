@@ -13,3 +13,10 @@ locations = ["Dhaka", "Chittagong", "Dhaka", "Sylhet", "Chittagong", "Rajshahi",
 
 # Write your code below:
 
+locations = ["Dhaka", "Chittagong", "Dhaka", "Sylhet", "Chittagong", "Rajshahi", "Khulna", "Dhaka"]
+
+set_locations = set(locations)
+print(set_locations)
+
+for item in set_locations:
+    print(f"Location: {item.upper()}")

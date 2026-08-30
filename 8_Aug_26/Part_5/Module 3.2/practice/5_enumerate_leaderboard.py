@@ -17,3 +17,13 @@ participants = ["Rahim", "Karim", "Nusrat", "Farhan", "Samiha", "Tanvir"]
 
 # Write your code below:
 
+
+for index, name in enumerate(participants, start=1):
+    if index == 1:
+        print(f"Rank {index}: {index}. {name} (Gold Medal)")
+    elif index == 2:
+        print(f"Rank {index}: {index}. {name} (Silver Medal)")
+    elif index == 3:
+        print(f"Rank {index}: {index}. {name} (Bronze Medal)")
+    else:
+        print(f"Rank {index}: {index}. {name}")

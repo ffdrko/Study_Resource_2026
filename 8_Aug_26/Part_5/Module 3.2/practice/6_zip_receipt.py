@@ -21,4 +21,11 @@ quantities = [2, 1, 3, 2]
 unit_prices = [25.0, 75.0, 15.0, 10.0]
 
 # Write your code below:
+grand_total = 0
 
+for codes, names, quant, prices in zip(item_codes, item_names, quantities, unit_prices):
+   subtotal = quant * prices
+   print(f"{codes} {names} | Qty: {quant} | Unit: ${prices} | Total: ${subtotal}")
+   grand_total += subtotal
+
+print(f"The grand total is {grand_total}")
