@@ -1,3 +1,4 @@
 Hello World
 Ostad
 Mastering the python
+new line added by append

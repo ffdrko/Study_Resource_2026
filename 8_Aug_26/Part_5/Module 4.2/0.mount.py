@@ -12,3 +12,6 @@ content = file.readlines()
 print(content)
 file.close()
 
+file = open("File/sample.txt", "a")
+file.write("new line added by append\n")
+file.close()
