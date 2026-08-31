@@ -4,3 +4,11 @@ def greet(name = "Guest"):
 
 greet()
 greet("Deepto")
+
+
+def normalize(value, maxvalue):
+    normalize_Value = value/ maxvalue
+    print(f"the normalize value is {normalize_Value}")
+
+
+normalize(50000, 100000)
