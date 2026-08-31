@@ -6,3 +6,9 @@ file.write("Hello World\n")
 file.write("Ostad\n")
 file.write("Mastering the python\n")
 file.close()
+
+file = open("File/sample.txt", "r")
+content = file.readlines()
+print(content)
+file.close()
+
