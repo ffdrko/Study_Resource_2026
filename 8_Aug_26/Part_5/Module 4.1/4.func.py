@@ -7,6 +7,10 @@ def simple_calculator(a,b):
 
 
 result = simple_calculator(10, 10)
+
+
+print(result)
+print(type(result))
 add_result, sub_result, mul_result, div_result = result
 
 
