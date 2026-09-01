@@ -1,4 +1,2 @@
-Hello World
-Ostad
-Mastering the python
-new line added by append
+This is a new content
+this is new file.
