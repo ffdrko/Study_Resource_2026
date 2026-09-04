@@ -6,9 +6,15 @@ class Student:
     def avarage_marks(self):
         return sum(self.marks) / len(self.marks)
 
+    @staticmethod
+    def hello():
+        print(f"Hello, welcome ")
+
 
 
 student1 = Student("Fahim", [85, 75 , 90])
+
+student1.hello()
 
 student1_average_marks = student1.avarage_marks()
 print(f"{student1_average_marks:.2f}")
