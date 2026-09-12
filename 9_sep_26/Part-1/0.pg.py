@@ -12,3 +12,5 @@ print("a", "b", "c", sep=", ")
 print("a", "b", "c", end="@\n")
 # use of separator and escape character
 print("a", "b", "c", sep="\n")
+# function inside print function 
+print(type(5)) # type function returns the type of the data.
